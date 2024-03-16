@@ -1,0 +1,184 @@
+/*Para darle mejor estilo a nuestra estructura en html*/
+/*Univ Edwin Rene Conde Bernabe*/
+/*Para la pagina de forma general*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    /*Para alinear todo al centro*/
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/*Para ubicar mejor el inicio materia y trabajos*/
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+/*Para el titulo de Facultad de ingenieria*/
+/*Para posicionarlo*/
+.logo{
+    margin-left: 30px;
+/*fuente y color*/    
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*Para INICIO MATERIA TRABAJO*/
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar a:hover{
+    background-color: #2a2929;
+}
+
+/*Para la presentacion del Universitario*/
+.header{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    height: 60vh !important;
+    background: url(img/fac1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-decoration: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #06033f;
+    color: #fff;
+    text-decoration: none;
+    background: #06033f;
+}
+.btn:hover{
+    background: none;
+}
+
+.btn-home{
+    display: flex;
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+/*Para la Base de Datos*/
+.content{
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    padding: 50px;
+    background: #fff;
+}
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 50px;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.box-container .box{
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0,0,0, .5);
+    margin: 2rem;
+}
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.box-container .box h3{
+    font-size: 20px;
+    color: #9c27b0;    
+}
+.box-container .box p{
+    padding: 0 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.contain{
+    background: #101010;
+}
+
+.contain{
+    background: url(img/fac4.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;   
+}
+
+.content{
+    padding-top: 70px;
+    background: #171717;
+    padding-bottom: 0;
+}
+
+@media (max-width: 980px){
+    .title{
+        margin-bottom: 0;
+        font-size: 50px;
+    }
+    .sau{
+        height: 170vh;
+    }
+    .navbar{
+        display: none;
+    }
+}
